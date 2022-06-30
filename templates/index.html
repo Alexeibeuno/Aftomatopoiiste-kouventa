@@ -6,39 +6,37 @@
 {% endblock %}
 
 {% block body %}
-<div class= "content">
+<div>
     <h1 style="text-align: center;">Chatterbot</h1>
 </div>
-<div id = "chatbot">
-    <p class = "botText"><span>This is your chatbot</span></p>
-</div>
-
-<div id = "userInput">
-    <input id="textInput" type = "text" name="msg" placeholder = "Message">
+<div id = "chatbox">
+    <p class = "botText"><span>Hi! Iam your Chatterbot.</span></p>
+    </div>
+    <div id = "userInput">
+    <input id ="textInput" type ="text" name="msg" placeholder="Message">
     <input id = "buttonInput" type = "submit" value="Send">
-</div>
-
-<script>
+    </div>
+    <script>
     function getBotResponse(){
-        var rawText = $("#textInput").val();
-        var userHtml = '<p class = "userText"><span>'+rawText+'</span></p>';
-        $("#textInput").val("");
-        $("#chatbox").append(userHtml);
-        document.getElementById('userInput').scrollIntoView({block:'start',behavior:'smooth'})
-        $.get("/get",{msg:rawText}).done(function(data){
-            var botHtml = '<p class= "botText"><span>'+data+'</span></p>';
-            $("#chatbox").append(botHtml);
-            document.getElementById('userInput').scrollIntoView({block:'start', behavior:'smooth'})
-        });
+    var rawText = $("#textInput").val();
+    var userHtml = '<p class = "userText"><span>' + rawText + '</span></p>';
+    $("#textInput").val("");
+    $("#chatbox").append(userHtml);
+    document.getElementById('userInput').scrollIntoView({block:'start',behaviour:'smooth'});
+    $.get("/get", {msg:rawText }).done(function(data) {
+    var botHtml = '<p class ="botText"><span>' + data + '</span></p>';
+    $("#chatbox").append(botHtml);
+    document.getElementById('userInput').scrollIntoView({block : 'start',behaviour:'smooth'});
+    });
     }
     $("#textInput").keypress(function(e) {
-        if(e.which ==13){
-            getBotResponse();
-
-        }
+    if(e.which == 13) {
+    getBotResponse();
+    }
     });
-    $("#buttonInput").click(function(){
-        getBotResponse();
+    $("#buttonInput").click(function() {
+    getBotResponse();
     })
-</script>
+    </script>
+    </div>
 {% endblock %}

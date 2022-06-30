@@ -1,22 +1,16 @@
-from flask import Flask, render_template, request,url_for,request, redirect
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
+from flask import Flask, render_template,request
 
 #chatterbot dependencies
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 app = Flask(__name__)
-english_bot = ChatBot("Chatterbot",storage_adapter = "chatterbot.storage.SQLStorageAdapter")
+english_bot = ChatBot("Chatterbot",storage_adapter="chatterbot.storage.SQLStorageAdapter")
 trainer = ChatterBotCorpusTrainer(english_bot)
 trainer.train("chatterbot.corpus.english")
 trainer.train("data/data.yml")
 
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-db = SQLAlchemy(app)
-
-@app.route('/')
+@app.route("/")
 def index():
     return render_template("index.html")
         
