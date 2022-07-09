@@ -1,51 +1,53 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Task Master</title>
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<title> Whatsapp like</title>
+<link rel="stylesheet" href="style.css" />
+<script src="{{url_for('static', filename='script.js')}}" defer></script>
 {% endblock %}
 
 {% block body %}
-<div class = "container">
-    <div class = "leftSide">
-        <div class="header">
+<div class="container">
+    <aside>
+      <div class="navbar">
+        <div class="user-logo"><img src="{{url_for('static', filename='Aftomatopoiiste.png')}}" /></div>
+        <nav>
+          <ul>
+            <li class="selectedLink" name="home">Solo's Chat Bot</li>
+            <li name="about">About Me</li>
+            <li name="resume">Resume</li>
+            <li name="contact">Contact</li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <main>
+      <div class="card active home" data-home>
+        <div class="title">Solo's Chat Bot</div>
+        <div class="content">
+
+
+
             
         </div>
-    </div>
-    <div class = "rightSide">
-        <div>
-            <h1 style="text-align: center;">Solo Chat bot</h1>
-        </div>
-        <div id = "chatbox">
-            <p class = "botText"><span>Hi! Iam your Chatterbot.</span></p>
-        </div>
-         <div id = "userInput">
-             <input id ="textInput" type ="text" name="msg" placeholder="Message">
-              <input id = "buttonInput" type = "submit" value="Send">
-        </div>
-        <script>
-        function getBotResponse(){
-             var rawText = $("#textInput").val();
-             var userHtml = '<p class = "userText"><span>' + rawText + '</span></p>';
-             $("#textInput").val("");
-             $("#chatbox").append(userHtml);
-            document.getElementById('userInput').scrollIntoView({block:'start',behaviour:'smooth'});
-             $.get("/get", {msg:rawText }).done(function(data) {
-            var botHtml = '<p class ="botText"><span>' + data + '</span></p>';
-             $("#chatbox").append(botHtml);
-            document.getElementById('userInput').scrollIntoView({block : 'start',behaviour:'smooth'});
-            });
-         }
-         $("#textInput").keypress(function(e) {
-             if(e.which == 13) {
-                getBotResponse();
-             }
-         });
-        $("#buttonInput").click(function() {
-         getBotResponse();
-        })
-        </script>
-    </div>
-    </div>
-</div>
+      </div>
+      <div class="card about" data-about>
+        <div class="title">About Me Page</div>
+        <div class="content">Content Goes Here</div>
+      </div>
+      <div class="card resume" data-resume>
+        <div class="title">Resume Page</div>
+        <div class="content">Content Goes Here</div>
+      </div>
+      <div class="card contact" data-contact>
+        <div class="title">Contact Page</div>
+        <div class="content">Content Goes Here</div>
+      </div>
+    </main>
+  </div>
+  <script>
+    const showMessage = () => {
+      alert("Hello JavaScript");
+    };
+  </script>
 {% endblock %}
