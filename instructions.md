@@ -12,4 +12,4 @@ i) To train the rasa model: rasa train
 
 ii) To test the rasa model: rasa shell
 
-official rasa website: https://rasa.com/docs/rasa/
+Official rasa website: https://rasa.com/docs/rasa/
