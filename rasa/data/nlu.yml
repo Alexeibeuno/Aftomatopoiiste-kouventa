@@ -1,0 +1,887 @@
+version: "3.1"
+nlu:
+- intent:
+  examples: |
+    - greet
+    - happy
+    - sad
+    - fun
+    - goodbye
+    - normal
+
+- intent: greet
+  examples: |
+    - Hi, come in! Paul, this is.. (They are all lined up next to the door.)... everybody, everybody, this is Paul.
+    - Hello, Paul.
+    - (mortified) Hi.
+    - Hi.
+    - Yeah?
+    - Hi.
+    - Hi guys!
+    - Wow. That is not a happy hi.
+    - Well... you never know. How's, um.. how's the family?
+    - So, how ya doin?
+    - So what's going on with you?
+    - Would you like some gum?
+    - Hey gorgeous, how's it going?
+    - Hello, baby. Hello, hello.
+    - Hi, how's it goin?
+    - Hey, Joey. Hey, buddy.
+    - Hey!
+
+- intent: fun
+  examples: |
+    - Wait, does he eat chalk?
+    - You are? Ross, I'm sorry..
+    - (sarcastic) Oh, that's attractive.
+    - I cannot sleep in a public place.
+    - Would you look at her? She is so peaceful.
+    - Are you okay, sweetie?
+    - The exclamation point in the title scares me. (Gesturing) Y'know, it's not just Freud, it's Freud!
+    - Oh, shhh, shh. Magic is about to happen.
+    - Vell, Eva, ve've done some excellent vork here, and I vould have to say, your pwoblem is qviiite clear. (He goes into a song and dance number.)
+    - All you want is a dingle,
+    - What you envy's a schwang,
+    - A thing through which you can tinkle,
+    - Or play with, or simply let hang...
+    - Hey! Here's the birthday boy! Ross, check it out hockey tickets, Rangers-Penguins, tonight at the Garden, and we're taking you.
+    - Happy birthday, pal!
+    - Alright, alright, alright. It's been fourteen and a half minutes and you still have not said one word. Oh God, do something. Just make contact, smile!
+    - He's in the bathroom. I don't think you wanna go in there!
+    - C'mon, we're roommates! (He goes into the bathroom, screams, and runs back out.) My eyes!! My eyes!!
+    - Oh, yeah, last week you had a wonderful, nutty, chocolatey kind of a cakey pie thing. (Rachel gives him a dirty look) Nothing, just, just, I'm fine.
+    - Funny, my birthday was seven months ago.
+    - Okay, okay. If I were omnipotent for a day, I would want, um, world peace, no more hunger, good things for the rain-forest...And bigger boobs!
+    - Who wasn't invited to the wedding.
+    - (singing) New York City has no power, and the milk is getting sour. But to me it is not scary, 'cause I stay away from dairy.... la la la, la la, la la... (she writes the lyrics down)
+    - He's planning your birthday party.
+    - Hey, don't look at me. This is Ross's thing.
+    - Yuh-huh! I was the last one to know when Chandler got bitten by the peacock at the zoo. I was the last one to know when you had a crush on Joey when he was moving in. (Monica gestures at Phoebe to shut up; Joey looks surprised but pleased) Looks like I was second to last.
+    - Tuna or egg salad?  Decide!
+    - All right Joey, be nice.  So does he have a hump? A hump and a hairpiece?
+    - If I let go of my hair, my head will fall off.
+    - I say push her down the stairs.
+    - You can see where he'd have trouble.
+    - If only he were a woman.
+    - Everybody? Shh, shhh. Uhhh... Central Perk is proud to present the music of Miss Phoebe Buffay.
+    - Hi. Um, I want to start with a song thats about that moment when you suddenly realize what life is all about. OK, here we go. (plays a chord, then the lights go out) OK, thank you very much.
+    - Hockey! (They go to leave but are blocked by three of Rachel's friends, Leslie, Kiki, and Joanne.  The guys pause to stare at them.) Hockey! Hockey. (The guys.)
+    - (to Phoebe) I swear I've seen birds do this on Wild Kingdom.
+    - Well, we were in the city shopping, and your mom said you work here, aaand it's true!
+    - Look at you in the apron. You look like you're in a play.
+    - (to a pregnant Leslie) Look at you, you are so big I can't believe it!
+    - I know. I know! I'm a duplex.
+    - Well, guess who my dad's making partner in his firm? (She points to herself and they all scream again.)
+    - And while we're on the subject of news.. (She holds up here finger to show off her engagement ring and they all scream again.)
+    - What, like there's a rule or something?
+    - Oh, I wish I could, but I don't want to.
+    - Ross, let me ask you a question. She got the furniture, the stereo, the good TV- what did you get?
+    - You got screwed.
+    - (to Monica) Look, look, I have elbows! (They scream.)
+    - Yeah, well, I had a great time with you.. I just can't stand your friends.
+    - Remember when we went to Central Park and rented boats?.. That was fun.
+    - He said he's really gonna miss you guys. (dubious look)
+    - You had a rough day, huh.. c'mere. (She sits down and Ross strokes her forehead.)
+    - I know, I know, I'm such an idiot. I guess I should have caught on when she started going to the dentist four and five times a week. I mean, how clean can teeth get?
+    - That's one way! Me, I- I went for the watch.
+    - What are you talking about? 'One woman'? That's like saying there's only one flavor of ice cream for you. Lemme tell you something, Ross. There's lots of flavors out there. There's Rocky Road, and Cookie Dough, and Bing! Cherry Vanilla. You could get 'em with Jimmies, or nuts, or whipped cream! This is the best thing that ever happened to you! You got married, you were, like, what, eight? Welcome back to the world! Grab a spoon!
+    - I honestly don't know if I'm hungry or horny.
+    - What?..... What, you wanna spell it out with noodles?
+    - Y'know, here's the thing. Even if I could get it together enough to- to ask a woman out,... who am I gonna ask? (He gazes out of the window.)
+    - I can see that. You look like you slept with a hanger in your mouth.
+    - You mean you know Paul like I know Paul?
+    - And yet you're surprisingly upbeat.
+    - I said that you had a nice butt, it's just not a great butt.
+    - Oh, you wouldn't know a great butt if it came up and bit ya.
+    - Kids, new dream... I'm in Las Vegas. (Rachel sits down to hear Chandler's dream.)
+    - C'mon, you're going out with the guy! There's gotta be something wrong with him!
+    - Oh, yeah. Had that dream.
+    - Yeah, 'cause otherwise someone might get what they actually ordered
+    - This guy says hello, I wanna kill myself.
+    - You got waaaay too much free time.
+    - Yeah, and-and it's not that we don't like the comedian, it's that-that... that's not why we bought the ticket.
+    - The problem is, though, after the concert's over, no matter how great the show was, you girls are always looking for the comedian again, y'know? I mean, we're in the car, we're fighting traffic... basically just trying to stay awake.
+    - Yeah, well, word of advice Bring back the comedian. Otherwise next time you're gonna find yourself sitting at home, listening to that album alone.
+    - (pause)....Are we still talking about sex?
+    - Then I look down, and I realize there's a phone... there.
+    - Instead of...?
+    - Yeah, but if you spent it, it would be like shopping!
+    - Okay. Okay, let's say I bought a really great pair of shoes. Do you know what I'd hear, with every step I took? 'Not-mine. Not-mine. Not-mine.' And even if I was happy, okay, and, and skipping- 'Not-not-mine, not-not-mine, not-not-mine, not-not-mine'...
+    - Never had that dream.
+    - I see pizza!
+    - Ross, you're mayor of the zone.
+    - Blah blah blah, blah blah blah... blah blaaaaaah....
+    - I know, I just want to bite his bottom lip. (Rachel looks at her) But I won't.
+    - God, the first time he smiled at me... those three seconds were more exciting than three weeks in Bermuda with Barry.
+    - Priesthood! Look Ross, I'm telling you, she has no idea what you're thinking. If you don't ask her out soon you're going to end up stuck in the zone forever.
+    - Oh, I guess. Except everything looks like jammies now.
+    - Oh. Maybe they're- napping.
+    - He's out banging other women over the head with a club, while she sits at home trying to get the mastodon smell out of the carpet!
+    - Marsha, these are cave people. Okay? They have issues like 'Gee, that glacier's getting kinda close.' See?
+    - Sounds like a date to me.
+    - Ah, well, in here, anyone who... stands erect... So what's new? Still, uh...
+    - Oh, I think this is the episode of Three's Company where there's some kind of misunderstanding.
+    - Then I've already seen this one! (Turns off the TV.)Then I've already seen this one! (Turns off the TV.)
+    - (taking a drink from Joey) Are you through with that?
+    - Yeah, sorry, the swallowing slowed me down.
+    - She's already fluffed that pillow... Monica, you know, you've already fluffed that- (Monica glares at her.) -but, it's fine!
+    - Yes, and we all know how cruel a parent can be about the flatness of a child's pillow.
+    - Doy! Probably right before she lost it!
+    - You don't get a lot of 'doy' these days...
+    - So c'mon, you guys, tell me all the dirt!
+    - Well, the biggest news is still you dumping Barry at the altar!
+    - Now, Monica, you know that's not how you look for an engagement ring in a lasagne...
+    - Kinda puts that whole pillow thing in perspective, huh, Mon?
+    - I mean presumably, the biggest part of your job is done.
+    - (they shake hands) Hello, Susan. (To Carol) Good shake. Good shake. So, uh, we're just waiting for...?
+    - (picks up a surgical instrament and mimes a duck with it) Quack, quack..
+    - Ross? That opens my cervix. (He drops it in horror.)
+    - ...As in Mouse?
+    - Come on! You guys can pee standing up.
+    - We can? All right, I'm tryin' that.
+    - Ok, you know what blows my mind? Women can see breasts any time they want. You just look down and there they are. How you get any work done is beyond me.
+    - Oh, ok, you know what I don't get? The way guys can do so many mean things, and then not even care.
+    - Multiple orgasms!
+    - (holds up her hand—she is on the phone) It says to call this number if you're not completely satisfied with this candy bar. Well, I'm not completely satisfied.
+    - We thought since Phoebe was staying over tonight we'd have kinda like a slumber party thing. We got some trashy magazines, we got cookie dough, we got Twister... (The phone rings and Monica answers it.)
+    - (to Alan) Thanks. I'll call you tomorrow. (Alan exits, to all) Okay. Okay, let's let the Alan-bashing begin. Who's gonna take the first shot, hmm?
+    - Leetch spots Messier in the crease- there's the pass! (He kicks it to Ross, but Ross is staring into a shop window.)
+    - We'll take a brief time out while Messier stops to look at some women's shoes.
+    - Little louder, okay, I think there's a man on the twelfth floor in a coma that didn't quite hear you...
+    - I dunno, but.. I think it's about to attack the Enterprise.
+    - Wow, being dumped by you obviously agrees with her.
+    - Ugly Naked Guy's laying kitchen tile. Eww!
+    - So you do know a little English.
+    - That's funny, because you know, you are a huge crapweasel!
+    - Chandler, we've been here for an hour doing this! Now watch, it's easy.
+    - Hey Ross. This probably isn't the best time to bring it up, but you have to throw a party for Monica.
+    - Well, this has been fun.
+    - You know, if you tilt your head to the left, and relax your eyes, it kinda looks like an old potato.
+    - S funny, um, uh, we agreed we'd spend the rest of our lives together. Things change, roll with the punches. I believe Julia's on the table..?
+    - Well, y'know, monogamy can be a, uh, tricky concept. I mean, anthropologically speaking-
+    - Are we greeting each other this way now? 'Cause I like that.
+    - Oh. Well, the way I see it, the guy's upset here, y'know? I mean, his wife's dead, his brother's missing... I think his butt would be angry here.
+    - Do you want a date Saturday?
+    - Hey, that monkey's got a Ross on its ass!
+    - Ross, is he gonna live with you, like, in your apartment?
+    - Look, you don't have to talk to it. You can sing to it if you want.
+    - I'd just like to say that I'm totally behind this experiment. In fact, I'd very much like to butter your head.
+    - But um, we just refer to you as Bobo the Sperm Guy.
+    - Look, if she's talking to it, I just think that I should get some belly time too. Not that I believe any of this.
+    - Yeah, but then you spent Phoebe's entire birthday party talking to my breasts, so then I figured maybe not.
+    - Huh. Did, uh... any of the rest of you guys think that when you first met me?
+    - Hello? Hello? Oh! Rachel, it's Paolo calling from Rome
+    - I think it's romantic.
+    - Y'know, when I saw you at the store last week, it was probably the first time I ever mentally undressed an elf.
+    - Um, were you planning on kissing me ever?
+    - Too many jokes... must mock Joey!
+    - Ross! He's playing with my spatulas again!
+    - Okay, look, he's not gonna hurt them, right?
+    - Oh my God! Calling from Rome! (Takes phone) Bon giorno, caro mio.
+    - (to Joey) So he's calling from Rome. I could do that. Just gotta go to Rome.
+    - Yeah, you have homosexual hair.
+    - So you guys, I'm doing all new material tonight. I have twelve new songs about my mother's suicide, and one about a snowman.
+    - And everyone's telling me, you gotta pick a major, you gotta pick a major. So, on a dare, I picked paleontology. And you have no idea what I'm saying, because, let's face it, you're a fetus. You're just happy you don't have gills anymore.
+    - (sarcastic) I don't see why not.
+    - Oh, god, this is great! The plane is gone, so it looks like I'm stuck here with you guys.
+    - I loved the moment when you first saw the giant dog shadow all over the park.
+    - Ok. (browsing the apartment) Wow, you guys sure have a lot of books about bein' a lesbian.
+    - Well, you know, you have to take a course. Otherwise, they don't let you do it.
+    - The uh, the baby that hasn't been born yet? Wouldn't that mean you're... crazy?
+    - What, you don't think they can hear sounds in there?
+    - You're not serious, I mean, you really... you really talk to it?
+    - You missed a belt loop.
+    - Ugly Naked Guy's taking his turkey out of the oven. Oh my god. He's not alone. Ugly Naked Guy's having Thanksgiving dinner with Ugly Naked Gal.
+    - Yes, I am. As of today, I am officially Joey Tribbiani, actor slash model.
+    - That's so funny, 'cause I was thinking you look more like Joey Tribbiani, man slash woman.
+    - Oh, I hope they're not ruined.
+    - More wine, dear?
+    - Hey, do you guys know what you're doing for New Year's? (They all protest and hit her with cushions) Gee, what?! What is wrong with New Year's?
+    - (singin) Hey, hey, I'm your daddy. I'm the one without any breasts.
+    - You owe me 20 bucks.
+    - All right, fine. Tonight's potatoes will be both mashed with lumps, and in the form of tots.
+    - What, we-uh- we don't have shoes here, or...?
+    - (mimicking) Ooh, ooh. Because she's my ex-wife, and will probably want to bring her, ooh, ooh, lesbian life partner.
+    - Oh, I uh, just came by to pick up my skull. Well, not mine, but...Susan Come in.
+    - Oh! A fine choice. I'm coming out. (Starts to climb over the furniture)
+    - Right. But, see, the longer I waited, the more phenomenal the kiss had to be, and now we've reached a place where it's just gotta be one of those things where I just like... sweep everything off the table and throw you down on it. And, uh, I'm not really a, uh, sweeping sorta fella.
+    - Oh, yeah, oh, I'm sure of it. You should just do it, just sweep and throw me.
+    - So tell me something. What does the phrase 'no date pact' mean to you?
+
+- intent: normal
+  examples: |
+    - Look , I'm sorry, guys, I just don't wanna give them any more ammunition than they already have.
+    - You know, you were right? I mean, I thought we were happy. We weren't happy. But with Mindy, now I'm happy. Spit.
+    - Yeah, calm down. You don't see Ross getting all chaotic and twirly every time they come.
+    - Ugly Naked Guy got a Thighmaster!
+    - OK... my weirdest place would have to be... the women's room on the second floor of the New York CIty public library.
+    - Disneyland, 1989, 'It's a Small World After All.'
+    - Oh, alright. The weirdest place would have to be... (sigh)... oh, the foot of the bed.
+    - I just never had a relationship with that kind of passion, you know, where you have to have somebody right there, in the middle of a theme park.
+    - Well, it was the only thing to do there that didn't have a line.
+    - There, well, see? Barry wouldn't even kiss me on a miniature golf course.
+    - Come on.
+    - Yeeeeaaaahhh! What's messing you up? The wine? The candles? The moonlight? You've just got to go up to her and say, 'Rachel, I think that...' (Rachel comes into the room behind them)
+    - No, he said we were holding up the people behind us.
+    - I mean, do you think there are people who go through life never having that kind of...
+    - Probably. But you know, I'll tell you something. Passion is way overrated.
+    - Has anybody seen my engagement ring?
+    - Anyway, they want me to go down to this- sonogram thing with them tomorrow.
+    - So what are you gonna do?
+    - (entering) Knock knock!How are we today? Any nausea?
+    - I have no idea. No matter what I do, though, I'm still gonna be a father.
+    - Easy Rach, we'll find it. (To all) Won't we!
+    - Oh! Yeah!
+    - Someone's left a glass on the coffee table. There's no coaster. It's a cold drink, it's a hot day. Little beads of condensation are inching their way closer and closer to the surface of the wood...
+    - STOP IT!! ...Oh my God. It's true! Who am I?
+    - Can you believe this? Al Pacino! This guy's the reason I became an actor! "I'm out of order? Pfeeeh. You're out of order! This whole courtroom's out of order!"
+    - Hey! You're in a play! I didn't know you could dance! You had a beard!
+    - You got the clothes clean. Now that's the important part.
+    - Yeah. I'm thinking, if we put our heads together, between the two of us, we can break them up.
+    - I'm so sorry, I can't believe I did this, but I couldn't stop laughing at your Norman Mailer story.
+    - Uh, waiter, one more plate of chicken wings over here
+    - Here's the thing, Janice. You know, I mean, it's like we're different. I'm like the bing, bing, bing. You're like the boom, boom, (Chandler flails his hand out and hits Janice in the eye)... boom.
+    - Hello! Were we at the same table? It's like... cocktails in Appalachia.
+    - Close? She's got her tongue in his ear.
+    - Joey, this is sick, it's disgusting, it's, it's—not really true, is it?
+    - Oh my god, what were you thinking?
+    - Come on, show me.
+    - Wow, this is so cool, you guys. The entire city is blacked out!
+    - Wow, you guys, this is big.
+    - Can I borrow the phone? I want to call my apartment and check on my grandma. (to Monica) What's my number?
+    - Well, I never call me.
+    - Oh, right, right. How was your date, 'Chand-lrr'?
+    - I was laughing! You made me laugh!
+    - We got the proofs back from that photo shoot, you know, the one with the little vegetables. Anyway, they pretty much sucked, so, I blew off the rest of the day, and I went shopping...(looks through her bags)... and I got you, I'm looking, I'm looking, I'm looking, I got you...
+    - (covering) What... did you get me there?
+    - I got you...these. (pulls out a pair of socks)
+    - Well, I'm gonna get another espresso. Can I get you another latte?
+    - Yeah, it was really hard.
+    - Oh, yeah, that hug looked pretty brutal.
+    - Oh, 'scuse me. I was kinda using that machine.
+    - But I saved it. I put my basket on top.
+    - Oh, I'm sorry, is that your basket? It's really pretty. Unfortunately, I don't see suds
+    - He is so cute!
+    - Do you have a plan?
+    - (to Rachel) What's the matter? Why so scrunchy?
+    - It's my father. He wants to give me a Mercedes convertible.
+    - Yeah, well, it's a Mercedes if I move back home. Oh, it was horrible. He called me young lady.
+    - I don't even have a 'pl'.
+    - Oh, that would be Monica. Hey, listen, I wanna borrow a coupla things, Aurora spent the night, I really wanna make her breakfast.
+    - Ooh, do I sense a little bit of resentment?
+    - Uh, listen, I just wanna thank you for this great opportunity.
+    - Bob is great. He's smart, he's sophisticated, and he has a real job. You, you go on three auditions a month and you call yourself an actor, but Bob...
+    - We're just friends.
+    - You're right, you're right, it is...So you gonna invite us all to the big opening?
+    - That was amazing. I can't even send back soup.
+    - Well, that's because you're such a sweet, gentle, uh...Do you, uh, do you...Oh, hey, uh you must need detergent.
+    - How, how did that happen?
+    - I suddenly had the feeling that I was falling. But I'm not.
+    - Yep. Pretty much.
+    - You're a lucky man. You know what I miss the most about her? That cute nibbly noise when she eats. Like a happy little squirrel, or a weasel.
+    - Huh, I never really noticed.
+    - Oh, yeah, yeah, listen for it.
+    - Yeah, but it's not gonna last. She's too much for me in bed. Sexually.
+    - Monica, I'm tellin' you, this guy is perfect for you.
+    - So what, you're not the only one. I mean, half the time we don't know where we're going. You've just gotta figure at some point it's all gonna come together, and it's just gonna be... un-floopy.
+    - Alright. Let's talk reality for a second.
+    - So, I'm guessing you had an extra ticket and couldn't decide which one of you got to bring a date?
+    - Well, aren't we Mr. The glass is half empty.
+    - Oh my God, oh- is today the twentieth, October twentieth?
+    - Oh, I was hoping you wouldn't remember.
+    - Eleven days before Halloween.. all the good costumes are gone?
+    - My grandmother has this new boyfriend, and they're both kind of insecure in bed. Oh, and deaf. So they're constantly, like, having to reassure each other that they're having a good time. You have no idea how loud they are!
+    - Well, if you want, you can stay with Rachel and me tonight.
+    - ...Ninety-five, ninety-six, ninety-seven. See, I told you! Less than a hundred steps from our place to here.
+    - Yeah, see.. you took mine. Chandler, what about you?
+    - Uh, if I were omnipotent for a day, I'd.. make myself omnipotent forever.
+    - See, there's always one guy. (Mocking) "If I had a wish, I'd wish for three more wishes." (Joey enters.)
+    - Hey, Joey, what would you do if you were omnipotent?
+    - Hey, if Little Joey's dead, then I got no reason to live!
+    - Joey, uh- OMnipotent.
+    - Well, maybe it's a contest, y'know? Like, collect all five?
+    - Oh, hey, don't do that! Cut it out!
+    - Loved him! Yeah! He's great!
+    - Hey, Rach. How was it with your friends? (She and Phoebe scream.) Okay! How would you like some Tiki Death Punch? (She pours the contents of the blender into some glasses.)
+    - Wow, you worked in a mine?
+    - Oh, you're fine, yeah, for a first job.
+    - You can totally, totally live on this.
+    - Oh, by the way, great service tonight.
+    - I worked in a Dairy Queen, why?
+    - God, isn't this exciting? I earned this. I wiped tables for it, I steamed milk for it, and it was totally—(opens envelope)—not worth it. Who's FICA? Why's he getting all my money? I mean, what- Chandler, look at that.
+    - Wait a minute! We're talking about someone that I'm going out with?
+    - ...I'll go. Let's start with the way he kept picking at- no, I'm sorry, I can't do this, can't do this. We loved him.
+    - We're with you. We got it.
+    - The hell with hockey, let's all do that!
+    - What are you doing?
+    - Hi, uh, nothing. That horrible woman just took my machine.
+    - Was your basket on top?
+    - (stops) I have no idea.
+    - Ooh! Ooh! And I brought Operation! But, um, I lost the tweezers, so we can't operate. But we can prep the guy!
+    - Okay. I'd- just- I'd never be able to enjoy it. It would be like this giant karmic debt.
+    - Chandler, what are you doing?
+    - I'm smoking. I'm smoking, I'm smoking.
+    - Um, not so good. He walked me to the subway and said 'We should do this again!'
+    - What? He said 'we should do it again', that's good, right?
+    - Must pee. (Goes to pee.)
+    - Well now, how-how do you fit into this whole thing?
+    - Well, Carol says she and Susan want me to be involved, but if I'm not comfortable with it, I don't have to be involved.. basically it's entirely up to me.
+    - She is so great! I miss her.
+    - What does she mean by 'involved'?
+    - What does she do?
+    - I know. I just wish that once, I'd bring a guy home that they actually liked.
+    - Well, you do realise the odds of that happening are a little slimmer if they never get to meet the guy..
+    - Yeah. Yeah, excellent.
+    - Ooh, Lambchop. How old is that sock? If I had a sock on my hand for thirty years it'd be talking too.
+    - Good for me!
+    - Are you gonna go over there?
+    - You look good.
+    - All right, all right, it's just that you left a red sock in with all your whites, and now, everything's kinda pink.
+    - Oh, everything's pink.
+    - That's because I'm wearing a dress that accents my boobs.
+    - You don't say.
+    - Do you all promise?
+    - Yeah! We promise! We'll be good!
+    - Hey, hey, hey, that's not the rule and you know it.
+    - Oh, now, don't listen to him, Pheebs, I think it's endearing.
+    - You know, there's nothing wrong with speaking correctly.
+    - Indeed there isn't... I should really get back to work.
+    - Did you ever go out with a guy your friends all really like?
+    - Okay.. Well, I'm going out with a guy my friends all really like.
+    - Can you believe it? ...Y'know what? I just don't feel the thing. I mean, they feel the thing, I don't feel the thing.
+    - Honey.. you should always feel the thing. Listen, if that's how you feel about the guy, Monica, dump him!
+    - You can come in, but your filter-tipped little buddy has to stay outside!
+    - Alright. I'm gonna go change, I've got a date.
+    - This Alan again? How's it goin'?
+    - S going pretty good, y'know? It's nice, and, we're having fun.
+    - So when do we get to meet the guy?
+    - Let's see, today's Monday... Never.
+    - Look, I don't even know how I feel about him yet. Just give me a chance to figure that out.
+    - Well, then can we meet him?
+    - What are you talking about? Keep it!
+    - Then don't do that, alright?
+    - Wh- are you welling up?
+    - Sorry about that. So. What have you been up to?
+    - Oh, not much. I-I got a job.
+    - She's a waitress.
+    - I'm just cleaning up.
+    - D'ya.. uh.. d'ya need any help?
+    - Uh.. okay, sure! Thanks! (She hands him the broom and sits down.)
+    - Anyway.. um.. (Starts to sweep.) So, you- uh- you nervous about Barry tomorrow?
+    - Oh.. a little..
+    - All right, you guys, I kinda gotta clean up now. (They all start to leave.)
+    - Chandler, you're an only child, right? You don't have any of this.
+    - I'm sorry, why is this girl going to call me?
+    - Oh, she just graduated, and she wants to be something in cooking, or food, or.... I don't know. Anyway, I told her you had a restaurant-
+    - No Mom, I don't have a restaurant, I work in a restaurant.
+    - Ross, could you come and help me with the spaghetti, please?
+    - Yeah. (They go to the kitchen.)
+    - Remember when we were in high school together?
+    - Yeah.
+    - Ok, you can do this. It's just like pulling off a Band-aid. Just do it really fast, and then the wound is exposed.
+    - Janice. Hi, Janice. Ok, here we go. I don't think we should go out anymore. Janice.
+    - (to all) Okay, please be good, please. Just remember how much you all like me.
+    - (carrying a tray of drinks) Alright, don't tell me, don't tell me! (Starts handing them out.) Decaf cappucino for Joey.. Coffee black.. Late.. And an iced tea. I'm getting pretty good at this!
+    - Oh, no, nonononono, you see what he's doing? He knows no-one's gonna say all those names, so they'll wind up calling her Geller, then he gets his way!
+    - My way?! You-you think this is my way? Believe me, of all the ways I ever imagined this moment in my life being, this is not my way- y'know what? Uh, um, this is too hard. I'm not, I can't do-
+    - I mean, didn't you think you were just gonna meet somone, fall in love- and that'd be it? (Ross gazes at her.) ..Ross?
+    - Yes, yes!
+    - Sorry I'm late, I was stuck at work. There was this big dinosaur.. thing.. anyway.
+    - Ross, you remember Susan.
+    - Yeah! It's fine, it's fine. Robbie's gonna be here for hours.
+    - How could I forget?
+    - What are we supposed to be seeing here?
+    - Wow.
+    - Ross, what's the matter?
+    - Ok, I know this is gonna sound really stupid, but I feel that if I can do this, you know, if I can actually do my own laundry, there isn't anything I can't do.
+    - Alright, we have to talk.
+    - Since always. It's like dating language. Y'know, like 'It's not you' means 'It is you'.
+    - Or 'You're such a nice guy' means 'I'm gonna be dating leather-wearing alcoholics and complaining about them to you'.
+    - Or, or, y'know, um, 'I think we should see other people' means 'Ha, ha, I already am'.
+    - Yeah, it's like when you're a kid, and your parents put your dog to sleep, and they tell you it went off to live on some farm.
+    - (on phone) Hi, Mindy. Hi, it-it's Rachel. Yeah, I'm fine. I-I saw Barry today. Oh, yeah, yeah he-he told me. No, no, it's okay. I hope you two are very happy, I really do. Oh, oh, and Mind, y'know, if-if everything works out, and you guys end up getting married and having kids- and everything- I just hope they have his old hairline and your old nose. (Slams the phone down.) (To everyone) Okay, I know it was a cheap shot, but I feel so much better now.
+    - Oh, 's'funny, really? Um, I don't remember you making any sperm.
+    - Yes, and she's very supportive.
+    - Okay, that's great. (Susan gives her drink to Carol.) No, I'm- Oh.
+    - -she, of course, she- uh- familiar with our.. special situation?
+    - Alright, when'd'ya have it on last?
+    - So, Saturday night, the big night, date night, Saturday night, Sat-ur-day night!
+    - No plans, huh?
+    - She is a kook.
+    - Why do you have to break up with her? Be a man, just stop calling.
+    - You know, if you want, I'll do it with you.
+    - Not a one.
+    - But, um... I don't think that's going to be you.
+    - Oh Ross, you're so great. (she playfully rubs his head and gets up)
+    - Because you waited too long to make your move, and now you're in the friend zone.
+    - Wow. My brother never even told me when he lost his virginity.
+    - Oh, right, right, shut up.
+    - Wait, wait, wait. You want him, I want her. He likes you.
+    - Chandler, nobody likes breaking up with someone. You just gotta do it.
+    - No, I know, but it's just so hard, you know? I mean, you're sitting there with her, she has no idea what's happening, and then you finally get up the courage to do it, and there's the horrible awkward moment when you've handed her the note.
+    - No no no, I am not giving you a cigarette.
+    - Yeah- no- I'm just- it's, I haven't worked- It's my bank.
+    - It's fine, it's fine. Look, do you wanna get this part, or not? Here.
+    - Don't think of it as a cigarette. Think of it as the thing that's been missing from your hand. When you're holding it, you feel right. You feel complete.
+    - Nah, not so much. Alright, now we smoke. (Takes a puff.) Oh.. my.. God. (He continues to smoke.)
+    - No, no, no. They say it's the same as the distance from the tip of a guy's thumb to the tip of his index finger.
+    - -if it's a boy, Minnie if it's a girl.
+    - OK, I have a question. Well, actually, it's not so much a question as.. more of a general wondering... ment.
+    - Oh, look at the little cat! (a small kitten is on the roof behind Ross)
+    - Sorry, that was wax.
+    - Why don't we just put 'poor little Tooty' out in the hall?
+    - You know, on second thought, gum would be perfection. (Jill gives him a stick of gum, and a strange look) 'Gum would be perfection'? 'Gum would be perfection.' Could have said 'gum would be nice,' or 'I'll have a stick,' but no, no, no, no. For me, gum is perfection. I loathe myself.
+    - No, I mean tonight, in the building. Suddenly. Into our lives.
+    - Alright. I looked all over the building and I couldn't find the kitty anywhere.
+    - Nice going, imp. OK, it's OK. All I need to do is reach over and put it in my mouth. (Chandler slyly grabs the gum from the wall and slides it back in his mouth.)
+    - Good save! We're back on track, and I'm... (grimacing) ..chewing someone else's gum. This is not my gum. Oh my God! Oh my God! And now you're choking.
+    - Listen. As someone who's seen more than her fair share of bad beef, I'll tell you that is not such a terrible thing. I mean, they're your friends, they're just looking out after you.
+    - So, Ross, what's going on with you? Any stories? (Digs her elbow into his hand.) No news, no little anecdotes to share with the folks?
+    - Okay! Okay. (To his parents) Look, I, uh- I realise you guys have been wondering what exactly happened between Carol and me, and, so, well, here's the deal. Carol's a lesbian. She's living with a woman named Susan. She's pregnant with my child, and she and Susan are going to raise the baby.
+    - Question. You're not dating anybody, are you, because I met somebody who would be perfect for you.
+    - Ah, y'see, perfect might be a problem. Had you said 'co-dependent', or 'self-destructive'...
+    - Um... yeah. Well, I mean, when I first met you, y'know, I thought maybe, possibly, you might be...
+    - Well, this is fascinating. So, uh, what is it about me?
+    - Ross is smart and funny, d'you ever think that about him?
+    - Okay, I-I d'know, you-you just- you have a quality.
+    - I just have to know, okay. Is it my hair?
+    - Is everything all right, dear?
+    - Hey, that guy's going home with more than a note!
+    - Hey, who's this little naked guy?
+    - There you are! Haaah, you got away from me!
+    - Y'know, if you're gonna work late, I could look in on him for you.
+    - Why don't you just get a roommate?
+    - Nah, I dunno... I think you reach a certain age, having a roommate is kinda pathe- (Realises) ....sorry, that's, that's 'pathet', which is Sanskrit for 'really cool way to live'.
+    - Why do you guys have so many keys in there anyway?
+    - Hey, I got one keyhole and about a zillion keys. You do the math.
+    - Yeah, but did they have to shoot him down? I mean, that was just mean.
+    - And I assume, Chandler, you are still boycotting all the pilgrim holidays
+    - Phoebe, you're gonna be with your grandma?
+    - Yes, and her boyfriend. But we're celebrating Thanksgiving in December 'cause he is lunar.
+    - Yeah. Rach, are you thinking you're gonna make it to Vail?
+    - Absolutely. Shoop, shoop, shoop. Only a hundred and two dollars to go.
+    - Ooh, ooh! Why don't we invite her?
+    - Terry, I, I, I know that I haven't worked here very long, but I was wondering, do you think it would be possible if I got a $100 advance in my salary?
+    - It's so that I can spend Thanksgiving with my family. See, every year we go skiing in Vail, and normally my father pays for my ticket, but I sort of started the whole independence thing, you know, which is actually why I took this job.
+    - Hey, look who's up! How do you feel?
+    - I just remembered, I have to do something.
+    - Here, sweetie, here. I took these when I had my golfing accident. (Hands Ross a bottle of pills. Then turns to Monica and pats her hair over her ears)
+    - Mom already called this morning to remind me not to wear my hair up. Did you know my ears are not my best feature?
+    - Some days it's all I can think about.
+    - (grabs Chandler by the shirt) All right, listen, smirky. If it wasn't for you and your stupid balloon, I would be on a plane watching a woman do this (makes a gesture like a stewardess pointing out exits) right now. But I'm not.
+    - Are these the shoes?
+    - Excuse me, excuse me! Yeah, noisy boys! (They stop talking and look up) Is it something that you would like to share with the entire group?
+    - Can you go any faster with that?
+    - So don't do it, it's fine. You don't have to do it just because Susan does it.
+    - Oh, I believe it. I think the baby can totally hear everything. I can show you. Look, this will seem a little weird, but you put your head inside this turkey, and then we'll all talk, and you'll hear everything we say.
+    - Do you uh, do you talk about me?
+    - Yeah, yeah, all the time.
+    - That thing is not coming in here.
+    - (Stands up and speaks more loudly) Sorry, I wa- I was just saying to my friend that I thought you were the most beautiful woman that I'd ever seen in my- in my life. And then he said that- you said you thought
+    - What were you modeling for?
+    - Hey, we all had better plans. This was nobody's first choice.
+    - Oh, really? So why was I busting my ass to make this delicious Thanksgiving dinner?
+    - Oh, I'm sorry, oh, I just, I thought we could have them whipped and then add some peas and onions.
+    - Ok, we all laughed when you did it with the stuffing, but that's not funny anymore.
+    - Thanks, you can just put it on the table.
+    - Do you think things would have been better if you'd just told her the truth?
+    - It was a really beautiful service.
+    - Thanks. Yeah, Carol borrowed it for a class, and I have to get it back to the museum.
+    - Do you know what it's like to grow up with someone who is critical of every single thing you say?
+    - I'm telling you, it's a wonder your mother turned out to be the positive, life-affirming person that she is.
+    - That is a wonder. So tell me something, Mom. If you had to do it all over again, I mean, if she was here right now, would you tell her?
+    - (exasperated) Yes, Chandler, that's exactly what it is. It's your hair.
+    - Now, see, I don't believe any of that. I think once you're dead, you're dead! You're gone! You're worm food! (realises his tactlessness) ...So Chandler looks gay, huh?
+
+- intent: sad
+  examples: |
+    - And they weren't looking at you before?!
+    - It's my baby too.
+    - You're definitely scaring here.
+    - No, you kidding? The guy's a freak..
+    - Let it go, Ross.
+    - It is. Eventually, it kind of... burns out. But hopefully, what you're left with is trust, and security, and... well, in the case of my ex-wife, lesbianism. So, you know, for all of those people who miss out on that passion... thing, there's all that other good stuff.
+    - Today's the day Carol and I first.. consummated our physical relationship. (Joey is puzzled.) Sex. ..You know what, I-I'd better pass on the game. I think I'm just gonna go home and think about my ex-wife and her lesbian lover.
+    - It's worse than the thumb!
+    - Oh, my god, I'm so sorry. Are you ok?
+    - Ow. Um, it's just my lens. It's just my lens. I'll be right back.
+    - (to Phoebe) I hit her in the eye! I hit her in the eye! This is the worst break-up in the history of the world.
+    - Oh my god. (Chandler downs another espresso.) How many of those have you had?
+    - Oh, I don't know, a million?
+    - God. I feel violated.
+    - Did anybody else feel they just wanted to peel the skin off their body, to have something else to do?
+    - (staring at a woman across the room) Ross, ten o'clock.
+    - Chandler, easy, easy. Go to your happy place. La la la la la la la.
+    - I'm not fine. Here she comes.
+    - We should always always break up together.
+    - I know.. it's gonna be really hard.
+    - Oh my God. Okay, go into the bathroom, use whatever you want, just don't ever tell me what you did in there.
+    - Okay, okay, fine! Make jokes, I don't care! This is a big break for me!
+    - ...I'm his butt double. 'Kay? I play Al Pacino's butt. Alright? He goes into the shower, and then- I'm his butt.
+    - Oh no, it's terrific, it's... it's... y'know, you deserve this, after all your years of struggling, you've finally been able to crack your way into showbusiness.
+    - All right, look, I'm not proud of this, ok? Well, maybe I am a little.
+    - Well, he's a big boy, he'll get over it.
+    - Carol was wearing boots just like those the night that we- we first- y'know. Fact, she, uh- she never took'em off, 'cause we-we- (off Chandler's look) Sorry. Sorry.
+    - Then, uh, then we got dressed, and I-I... I walked her to the- (looks up, realises, and points) -the bus stop... I'm fine.
+    - Hey, that woman's got an ass like Carol's! (They turn to stare at him.) What? Thought we were trying to find stuff.
+    - No, he'll be fine. It's the other five I'm worried about.
+    - Do you have any respect for your body?
+    - Alright, alright, maybe it'll take my mind off it. Do you promise to buy me a big thumb finger?
+    - Look-look-look-look-look, my first pay check! Look at the window, there's my name! Hi, me!
+    - I remember the day I got my first pay check. There was a cave in in one of the mines, and eight people were killed.
+    - Don't you realise what you're-you're doing to yourself?
+    - Hey, y'know, I have had it with you guys and your cancer and your emphysema and your heart disease. The bottom line is, smoking is cool, and you know it.
+    - Okay. I think it's time to change somebody's nicotine patch. (Does so.)
+    - Joey ate my last stick of gum, so I killed him. Do you think that was wrong?
+    - You're kidding. Oh my God.
+    - Who-who wants fair? Y'know, I just want things back. Y'know, the way they were.
+    - I'm sorry..
+    - Yeah, uh, except for the red sock, which is still red. I'm sorry, please don't be upset, it could happen to anyone.
+    - Except it didn't. It happened to me. Oh, god, I'm gonna look like a big marshmallow peep. What am I doing? What am I doing? My father's right. I can't live on my own! I can't even do laundry!
+    - That does not sound stupid to me. You know, it's like the first time I had to make dinner for myself, after Carol left me? (the buzzer on the washer goes off) I'm sorry, that's all the time we have. Next on Ross...(opens up the washer) Uh-oh.
+    - Oh, you uh, you wanna hear a freaky coincidence? Guess who's doing laundry there too?
+    - Me. Was that not clear? Hey, why don't, um, why don't I just join you both, here?
+    - It's laundry. The thinking through is minimal.
+    - So what're you saying here? I should shave again, pick up some wine, what?
+    - Yes, the moon, the glow, the magical feeling, you did this part- Could I get some painkillers over here, please?
+    - Look, it's just a little more complicated...
+    - He's right, enough, already. What is the big deal about today? So you slept with her for the first time, so what? You slept with her for seven years after that.
+    - Well, what? What? What is it? That she left you? That she likes women? That she left you for another woman that likes women?
+    - (sarcastic) Oh, she's sorry! I feel better!
+    - (tearful) I just can't believe this! I mean, with the holidays coming up- I wanted him to meet my family-
+    - Are you guys gonna be okay?
+    - Hey hey, we'll be fine. We're just gonna need a little time.
+    - (dubious) I understand.
+    - Yeah, I'm sorry too. But, I gotta tell you, I am a little relieved.
+    - Ooh, I'm alive with pleasure now.
+    - Hey, this is so unfair!
+    - Fun? Where was the fun? Tell me specifically, which part was the fun part? Where's my puck?
+    - I found it. Finders keepers, losers weepers.
+    - Could've played Monopoly, but nooooo.
+    - I'm so sorry, you guys. I didn't mean to bring you down.
+    - No, you were right. I don't have a plan. (There's a knock on the door.)
+    - So I have a flaw! Big deal! Like Joey's constant knuckle-cracking isn't annoying? And Ross, with his over-pronouncing every single word? And Monica, with that snort when she laughs? I mean, what the hell is that thing? ...I accept all those flaws, why can't you accept me for this?
+    - ...Does the knuckle-cracking bother everybody?
+    - Yeah, well, you didn't know Chi Chi.
+    - Oh, I can't believe you! You've been so good, for three years!
+    - "So how does it feel knowing you're about to die?"
+    - Hold on a second, alright? Just think about what you went through the last time you quit.
+    - Okay, so this time I won't quit!
+    - Okay, I'm not just waitressing. I'm.. I, um... I write the specials on the specials board, and, uh... and I, uh... I take the uh dead flowers out of the vase... Oh, and, um, sometimes Artelle lets me put the little chocolate blobbies on the cookies.
+    - All right! I'm putting it out, I'm putting it out. (He drops it in Phoebe's coffee.)
+    - "Warden, in five minutes my pain will be over. But you'll have to live with the knowledge that you sent an honest man to die."
+    - Yeah. Do that for another two hours, you might be where I am right about now. (He enters.)
+    - No, it's good, it is good, it's just that- mm- doesn't she seem a little angry?
+    - Well, she has issues.
+    - It's not mine, I didn't earn it, if I kept it, it would be like stealing.
+    - You- uh- y'know what, I'm gonna go. I don't- I don't think I can be involved in this particular thing right now.
+    - Oh! Man, I never thought I'd be here.. (She leans back onto his hand.)
+    - Me either... (He pulls up a stool so that he doesn't have to move his hand.)
+    - Be right there. (To Robbie and Rachel) Be back in a sec.
+    - I dumped him.
+    - Yeah, I know, he's sweet, but it's just not fun anymore, you know? I don't know if it's me, or his hunger strike, or, I don't know.
+    - Monica, what is so amazing? I gave up, like, everything. And for what?
+    - But see, it was a plan. Y'know, it was clear. It was figured out, and now everything's just kinda like...
+    - I mean, why should I let them meet him? I mean, I bring a guy home, and within five minutes they're all over him. I mean, they're like- coyotes, picking off the weak members of the herd.
+    - Uh, no. Loosely translated 'We should do this again' means 'You will never see me naked'.
+    - So, um- so how's this, uh, how's this gonna work? Y'know, with us? Y'know, when, like, important decisions have to be made?
+    - Give me a 'for instance'.
+    - Well, uh, uh, I don't know, okay, okay, how about with the, uh, with the baby's name?
+    - (puts down the lasagne) I just... can't do it.
+    - Well, no, although I did have an imaginary friend, who... my parents actually preferred.
+    - ...How long was I in there?
+    - Does she.
+    - What did they do to you?
+    - It's nothing, it's just- Okay. I'm going through my mail, and I open up their monthly, you know, STATEMENT-
+    - and there's five hundred extra dollars in my account.
+    - Yes, 'cause now I have to go down there, and deal with them.
+    - All right, you two, stop it!
+    - No no no, she gets a credit, hey, I'm in there too.
+    - Ross. You're not actually suggesting Helen Willick-Bunch-Geller? 'Cause I think that borders on child abuse.
+    - So, got any advice? Y'know, as someone who's recently been- dumped?
+    - Well, you may wanna steer clear of the word 'dumped'. Chances are he's gonna be this, this broken shell of a man, y'know, so you should try not to look too terrific, I know it'll be hard. Or, y'know, uh, hey!, I'll go down there, and I'll give Barry back his ring, and you can go with Carol and Susan to the OB/GYN...
+    - Oh, you've got Carol tomorrow.. When did it get so complicated?
+    - Got me.
+    - That's ridiculous!
+    - Can I use.. either thumb?
+    - Speaking of issues, isn't that your ex-wife?
+    - (trying to ignore her) No. No.
+    - Well, they don't have to know that... (She starts to fluff the same pillow Monica fluffed multiple times earlier.)
+    - Okay, okay, yes, it is. (waves) How about I'll, uh, catch up with you in the Ice Age.
+    - You look great. I, uh... I hate that.
+    - Monica- Hi! Um, Monica, you're scaring me. I mean, you're like, you're like all chaotic and twirly. And not-not in a good way.
+    - That's because as far as my parents are concerned, Ross can do no wrong. Y'see, he's the Prince. Apparently they had some big ceremony before I was born.
+    - oh God, oh God, oh God oh God oh God oh God.... (Starts to look under the couch cushions.)
+    - I know I had it this morning, and I know I had it when I was in the kitchen with...
+    - (looks at the lasagne and realizes something) Ohhhhh, don't be mad...
+    - Oh, I am sorry...
+    - I think this is probably why Damone smokes in his cell alone.
+    - Alright, now try taking a puff.
+    - Oh, Martha Ludwin's daughter is gonna call you. (Tastes a snack) Mmm! What's that curry taste?
+    - I know this is going to sound unbelievably selfish, but, were you planning on bringing up the whole baby/lesbian thing? Because I think it might take some of the heat off me.
+    - What that Rachel did to her life.... We ran into her parents at the club, they were not playing very well.
+    - I'm not gonna tell you what they spent on that wedding... but forty thousand dollars is a lot of money!
+    - What's that supposed to mean?
+    - Nothing! It's an expression.
+    - Y'know, it's even worse when you're twins.
+    - Yeah. We don't speak. She's like this high-powered, driven career type.
+    - No it's not.
+    - Where are they? Where are they?
+    - It's great. Maybe tomorrow we can rent a car and run over some puppies.
+    - Boy, I know they say you can't change your parents,... boy, if you could- (To Ross) -I'd want yours.
+    - And you knew about this?!
+    - Oh no. You went on our honeymoon alone?
+    - All right. Well, there you go. (she gets extremely wound up, and begins to try and calm herself down) Stop it, stop it, stop it.
+    - No. I went with, uh.. Now, this may hurt.
+    - No! (To Rachel) I went with Mindy.
+    - Yeah, well, I had a 24-inch waist. You lose things. Now come on, get outta my way.
+    - Hey, that's not good. Can I get an espresso and a latte over here, please?
+    - Mindy?! My maid of honour, Mindy?!
+    - Yeah, well, uh, we're kind of a thing now.
+    - Oh! Well, um.. (Grabs his forehand) You've got plugs!
+    - Careful! They haven't quite taken yet.
+    - And you've got lenses! But you hate sticking your finger in your eye!
+    - Not for her. Listen, I really wanted to thank you.
+    - See, about a month ago, I wanted to hurt you. More than I've ever wanted to hurt anyone in my life. And I'm an orthodontist.
+    - Your folks are really that bad, huh?
+    - Oh, are you sure you're ok?
+    - What a neat idea. All your clothes match. I'm gonna do this.
+    - We ripped that couple apart, and kept the pieces for ourselves.
+    - What a beautiful story. Hey, I'm fine by the way.
+    - Oh, I'm sorry.
+    - That is so unfair!
+    - Because you're a kook! Instead you wait until they send you a notice.
+    - Oh, so you're divorced?
+    - Oh, I'm sorry, then you're widowed?...Hopefully?
+    - Oh. I'm sorry it didn't work out.
+    - Oh, he needed some time to grieve.
+    - C'mon, you guys, it wasn't that bad. It was better than that thing I did with the trolls, at least you got to see my head.
+    - Something went wrong with Underdog, and they couldn't get his head to inflate. So anyway, um, his head is like flopping down Broadway, right, and I'm just thinking... how inappropriate this is. Um, I've got something in my eye, uh, Joey, could we check it in the light, please?
+    - Don't listen to your mother. You're independent, and you always have been! Even when you were a kid... and you were chubby, and you had no friends, you were just fine! And you would read alone in your room, and your puzzles...
+    - Well, at least she had the chance to leave a man at the altar...
+    - I gave you one job! (Starts to examin the lasagne through the bottom of the glass pan.)
+    - Look! I cleaned! I did the windows, I did the floors... I even used all the attachments on the vacuum, except that little round one with the bristles, I don't know what that's for.
+    - Oh, like I wasn't dreading tomorrow enough, having to give it back to him... 'Hi Barry! Remember me? I'm the girl in the veil who stomped on your heart in front of your entire family!' Oh God and now I'm gonna have to return the ring, without the ring, which makes it so much harder...
+    - Oh, uh, that would be mine. See, I wrote a note to myself, and then I realised I didn't need it, so I balled it up and... (sees that Monica is glaring at him) ...now I wish I was dead.
+    - Dehydrated Japanese noodles under fluorescent lights... does it get better than this?
+    - Well yeah! ...Oh God. I- just- I thought- Good, Shelley. I'm just gonna go flush myself down the toilet now...(backs out of the room) Okay, goodbye...
+    - ...Couldn't enjoy a cup of noodles after that. I mean, is that ridiculous? Can you believe she actually thought that?
+    - Oh, oh, a quality, good, because I was worried you guys were gonna be vague about this.
+    - Hey dad, what's up? (Listens) Oh God. Ross, it's Nana.
+    - The doctor says it's a matter of hours.
+    - C'mon, this was a pact! This was your pact!
+    - Hi. Hi, sorry I'm late.
+    - I can't kiss anyone
+    - I'm sorry, okay. It's just that Chandler has somebody, and Phoebe has somebody- I thought I'd ask Fun Bobby.
+    - Okay, so on our no-date evening, three of you now have dates.
+    - Yeah, but Janice? That-that was like the worst breakup in history!
+    - Yeah, all the time. I want the baby to know my voice.
+    - She is unbelievable, our mother is...
+    - Well, 'cause then they'd be like my mom used to make them, you know, before she died.
+    - No! Uh, I d'know! The point is, if you were gonna set me up with someone, I'd like to think you'd set me up with someone like him.
+    - Oh! ...Yeah, they were gross. Oh, you know what I loved? Her Sweet 'n' Los. How she was always stealing them from- from restaurants.
+    - She looks so small.
+    - Kill me. Kill me now.
+    - Perfect. Perfect. So now everybody's getting kissed but me.
+    - I'm sorry you misunderstood...
+    - Oh, will you give me the thing. (Snatches the camera)
+    - Are you alright?
+    - Yes I can. Because if I go it means I have to break up with you, and I can't break up with you.
+    - Ooh, sorry. Um, and, and then you put your arms around me. And then you put your arms around me. (He does so) And, um, and then you tell me that you love me and you'll never forget me.
+    - That thing This is how you greet guests at a party? Let me ask you something, if I showed up here with my new girlfriend, she wouldn't be welcome in your home?
+    - Okay. He was more embarrassed about that than anyone. Okay? And for him to have the courage to walk back in here like nothing happened...
+    - And then... your face is bloated?
+    - No. Okay. I was at the airport, getting into a cab, when this woman- this blonde planet with a pocketbook- starts yelling at me. Something about how it was her cab first. And then the next thing I know she just starts- starts pulling me out by my hair! So I'm blowing my attack whistle thingy and three more cabs show up, and as I'm going to get into a cab she tackles me. And I hit my head on the kerb and cut my lip on my whistle...oh...everybody having fun at the party? (To Monica) Are people eating my dip?
+    - Well, c'mon, if it's important enough to discuss while I'm playing, then I assume it's important enough for everyone else to hear!
+    - It's just that I'm sick of being a victim of this Dick Clark holiday. I say this year, no dates, we make a pact. Just the six of us- dinner.
+    - Y'know, I was hoping for a little more enthusiasm.
+    - Yes, you do. When we left, you said, "got the keys."
+    - I didn't wanna leave him alone. Alright? We- we had our first fight this morning. I think it has to do with my working late. I said some things that I didn't mean, and he- he threw some faeces...
+    - It really was. Oh, c'mere, sweetheart. (Hugs her) Y'know, I think it might be time for you to start using night cream.
+    - ...And then we throw your body in the water... Gee, that does sound fun.
+    - Everyone thinks they know me. Everyone says 'Jack Geller, so predictable'. Maybe after I'm gone, they'll say 'Buried at sea! Huh!'.
+    - Bye, Nana.
+    - Ahhhhhh, I didn't get the job.
+    - Well, for your information, Paolo is gonna be in Rome this New Year, so I'll be just as pathetic as the rest of you.
+    - You call that delicious?
+    - I know, uh, the air, the-the trees... even though Nana's gone there's, there's something almost, uh- I dunno, almost life-aff- (Not looking where he is going he falls into an open grave)
+    - I'm fine. Just-just... having my worst fear realised...
+    - Okay, don't worry, I'm just checking to see if the muscle's in spasm...huh.
+    - I thought it was gonna be a closed casket.
+    - You're watching a football game at a funeral?
+    - You are a frightening, frightening man.
+    - I'm not sure I know what you're getting at.
+    - Why? Because everything is my responsibility? Isn't it enough that I'm making Thanksgiving dinner for everyone? You know, everyone wants a different kind of potatoes, so I'm making different kinds of potatoes. Does anybody care what kind of potatoes I want? Nooooo, no, no! (starting to cry) Just as long as Phoebe gets her peas and onions, and Mario gets his tots, and it's my first Thanksgiving, and it's all burned, and, and I... I...
+    - Rachel, Rachel, sweetheart. You're a terrible, terrible waitress. Really, really awful.
+    - Ok, I, I hear what you're sayin'. I'm with you. Um, but I, but I'm trying really hard. And I think I'm doing better. I really do. Does anybody need coffee? (everyone in the place raises their hand) Oh, look at that.
+    - Excuse me, sir. Hi, you come in here all time. I was just wondering, do you think there's a possibility that you could give me an advance on my tips?
+    - You're wrong.
+    - And this from the cry-for-help department. Are you wearing makeup?
+    - Listen to me! When my time comes, I wanna be buried at sea.
+    - How she drove you crazy, picking on every little detail, like your hair... for example.
+    - She may have died.
+    - Ah, I'm gonna be one of his helpers. It's just such a slap in the face, y'know?
+    - Well, the turkey's burnt. (checking pots) Potatoes are ruined, potatoes are ruined, potatoes are ruined.
+    - Now I'm depressed! ...(To everyone) Even more than I was.
+    - Your grandmother would have hated this.
+    - Oh, I hate this story.
+    - Everybody looks so happy. I hate that.
+    - Get out.
+    - ...I think that bitch cracked my tooth.
+    - Okay, so I'm gonna be the only one standing there alone when the ball drops?
+    - (panicked) The oven is on.
+    - Ok, ok, ok, ok, here goes. You know, I, you know, can't do this. Uh, this is too weird. I feel stupid.
+    - Set another place for Thanksgiving. My entire family thinks I have VD.
+    - I don't know. It's just not the same without Mom in the kitchen.
+    - All right, that's it. You know what? Just get out of my way and stop moping.
+    - Well, sure, what with it being her funeral and all.
+    - No, I'd be hearing about 'Why didn't I get the honey-glazed ham?', I didn't spend enough on flowers, and if I spent more she'd be saying 'Why are you wasting your money? I don't need flowers, I'm dead'.
+    - I have shown you everything we have. Unless you want your mother to spend eternity in a lemon yellow pant-suit, go with the burgundy.
+    - I dunno, it's weird. I mean, I know she's gone, but I just don't feel, uh...
+    - Hm, I mean maybe no-one ever really goes. Ever since my mom died, every now and then, I get the feeling that she's like right here, y'know? (She circles her hand around her right shoulder. Chandler, sitting on her right, draws back nervously) Oh! And Debbie, my best friend from junior high- got struck by lightning on a miniature golf course- I always get this really strong Debbie vibe whenever I use one of those little yellow pencils, y'know? ...I miss her.
+
+- intent: happy
+  examples: |
+    - There's nothing to tell! He's just some guy I work with!
+    - (reading the program) Ooh! Look! Look! Look! Look, there's Joey's picture! This is so exciting!
+    - You can always spot someone who's never seen one of his plays before. Notice, no fear, no sense of impending doom...
+    - Oh, we're having spaghetti! That's.... easy.
+    - Okay, everybody relax. This is not even a date. It's just two people going out to dinner and- not having sex.
+    - Alright, so I'm back in high school, I'm standing in the middle of the cafeteria, and I realize I am totally naked.
+    - All of a sudden, the phone starts to ring. Now I don't know what to do, everybody starts looking at me.
+    - What you guys don't understand is, for us, kissing is as important as any part of it.
+    - Yeah, right!.......Y'serious?
+    - OK, I'll go. OK, senior year of college... on a pool table.
+    - Hey, that was really good!
+    - Oh yeah, nobody knows. And we're not supposed to ask.
+    - I got fired.
+    - Very clean! It looks great! Terrific!
+    - I dunno.. I-I thought it looked better there. And I- and also, it's an extra seat around the coffee table.
+    - Yeah, yeah, it's interesting.. but y'know what? Just for fun, let's see what it looked like in the old spot. (She moves it.) Alright, just to compare. Let's see. Well, it looks good there too. Let's just leave it there for a while.
+    - Well, y'know, I had some trouble with it at first too, but the way I look at it is, I get all the good stuff all the fun, all the talking, all the sex; and none of the responsibility. I mean, this is every guy's fantasy!
+    - What? So you guys don't mind going out with someone else who's going out with someone else?
+    - Thanks! Let's keep going.
+    - Oh, and uh, the fabric softener?
+    - Nothing. I just think it's nice when we're all here together.
+    - "I just wanna go back to my cell. 'Cause in my cell, I can smoke."
+    - Oh, yeah!
+    - Oh my God, it's that Victoria's Secret model. Something... something Goodacre.
+    - She's right, it's Jill. Jill Goodacre. Oh my God. I am trapped in an ATM vestibule with Jill Goodacre! (pause) Is it a vestibule? Maybe it's an atrium. Oh, yeah, that is the part to focus on, you idiot!
+    - Jill says vestibule... I'm going with vestibule
+    - Well, Chandler's old roomate was Jewish, and these are the only candles we have, so... Happy Chanukah, everyone.
+    - (sighs and gestures to explain) There's a beautiful woman at eight, nine, ten o'clock!
+    - She's amazing! She makes the women that I dream about look like short, fat, bald men!
+    - Well, go over to her! She's not with anyone.
+    - He could never get a woman like that in a million years.
+    - Oh God, I can't believe I'm even considering this... I'm very very aware of my tongue...
+    - I'm free! I'm free!
+    - It was unbelievable. I-I've never met anyone like her. She's had the most amazing life! She was in the Israeli army...
+    - We talked 'til like two. It was this perfect evening... more or less.
+    - I'm sorry, you know, maybe I wasn't being clear. Uh, this is our cart.
+    - I've gotta tell you, Bob is terrific.
+    - It is so great to meet a guy who is smart and funny, and has an emotional age beyond, like eight.
+    - You know what else? He's unbelievable in bed
+    - Know what was great? The way his smile was kinda crooked.
+    - Yes, yes! Like the man in the shoe!
+    - (to Rachel) I can't believe you tried to move the green ottoman.
+    - Thank God you didn't try to fan out the magazines. I mean, she'll scratch your eyes right out.
+    - ...So I think Alan will become the yardstick against which all future boyfriends will be measured.
+    - What future boyfriends? Nono, I th- I think this could be, y'know, it.
+    - Oh, yeah. I'd marry him just for his David Hasselhof impression alone. You know I'm gonna be doing that at parties, right? (Does the impression)
+    - You know what I like most about him, though?
+    - The way he makes me feel about myself.
+    - Yeah, it's his, uh, innate Alan-ness that-that-that we adore.
+    - I brought you alphabet soup.
+    - Did you pick out the vowels?
+    - No, but would you like a thousand dollars and a football phone?
+    - No. 'Cause you need that. No, it's okay, thanks.
+    - Okay, alright, you buy me a soda, and then we're even. Okay?
+    - I know! I know, I opened it up and there it was, just floating in there, like this tiny little hitch-hiker!
+    - Well? Isn't that amazing?
+    - Well, y'know, these people are pros. They know what they're doing, they take their time, they get the job done.
+    - Why are- why are you so tanned?
+    - Oh, I, uh- I went to Aruba
+    - .Well, this is still ruined, right?
+    - (To Ross) Do you remember the Ludwins? The big one had a thing for you, didn't she?
+    - They all had a thing for him.
+    - I- I think they're great! I, I really do.
+    - Boys? We're going in.
+    - Everything you need to know is in that first kiss.
+    - Absolutely.
+    - Would you let it go? It's not that big a deal.
+    - Not that big a deal? It's amazing. Ok, you just reach in there, there's one little maneuver, and bam, a bra right out the sleeve. All right, as far as I'm concerned, there is nothing
+    - Look, there are people like Ross who need to shoot for the stars, with his museum, and his papers getting published. Other people are satisfied with staying where they are- I'm telling you, these are the people who never get cancer.
+    - And I read about these women trying to have it all, and I thank God 'Our Little Harmonica' doesn't seem to have that problem.
+    - Oh, that's great.
+    - Yeah, I think for us, kissing is pretty much like an opening act, y'know? I mean it's like the stand-up comedian you have to sit through before Pink Floyd comes out.
+    - Whose little ball of paper is this?!
+    - You're gonna be an aunt.
+    - Y'know, I've done nothing but crappy plays for six years. And I finally get my shot, and I blow it!
+    - Maybe this wasn't your shot.
+    - Yeah, I mean... I think when it's your shot, y'know, you-you know it's your shot. Did it... feel like your shot..?
+    - I'm sorry, Joey. I'm gonna go to bed, guys.
+    - Doesn't matter, I'll get 'em tomorrow. Or not. Whenever. (He goes to her room.)
+    - I feel great. I feel- great, I fleel great.
+    - I gotta tell you. You're the best in the business.
+    - Really? You don't know what that means to me.
+    - So I'm kissing everyone?
+    - Alright, somebody kiss me. Somebody kiss me, it's midnight! Somebody kiss me!
+    - Alrightalrightalright. (Kisses him. Ross takes a photo) There.
+    - Nonono, you can't kiss Ross, that's your brother.
+    - Ooh, you smell great tonight. What're you wearing?
+    - Listen, uh, you wanna go get a drink or something?
+    - Wow, those pills really worked, huh?
+    - Oh, it's-it's Marcel. He keeps shutting me out, y'know? He's walking around all the time dragging his hands...
+    - Yeah, we played, we watched TV.. that juggling thing is amazing.
+    - The most unbelievable thing has happened. Underdog has just gotten away.
+    - Come on. An 80-foot inflatable dog let loose over the city. How often does that happen?
+    - Got the keys? or Got the keys!
+    - Y'know, I uh.. just thought I'd throw this out here. I'm no math whiz, but I do believe there are three girls and three guys right here. (Makes kiss noise)
+    - In twenty seconds it'll be midnight...
+    - And the moment of joy is upon us.
+    - Looks like that no date pact thing worked out.
+    - I don't know. I don't know what I'm gonna do. I just- you decide.
+    - I love this artichoke thing! Oh, don't tell me what's in it, the diet starts tomorrow! (Laughs her Janice laugh)
+    - Sandy! Hi! C'mon in! (She enters, followed by a young boy and a younger girl)...You brought your kids.
+    - Anytime you're ready.
+    - Yeah, and I met this really hot single mom at the store. What's an elf to do?
+    - Well, he's kinda like the guy I went to see that with. Except, except he-he's smarter, and gentler, and sweeter... I just- I just wanna be with him all the time. Day and night, and night and day... and special occasions...
+    - Shall I carve?
+    - (Into microphone) Okay, hi. Ladies and gentlemen, back by popular demand, Miss Phoebe Buffay. Wooh!
+    - Ok, who wants light cheese, and who wants dark cheese?
+    - I don't even wanna know about the dark cheese.
+    - Does anybody wanna split this with me?
+    - Ooh, you guys have to make a wish.
+    - Come on, you know, Thanksgiving. Ooh, you got the bigger half. What'd you wish for?
+    - Ok, I'm off to talk to my unborn child.
+    - Ok, Mom never hit.
+    - Keep singing! Keep singing!
+    - (singing) Hey, hey, you're my baby, and I can't wait to meet you. When you come out I'll buy you a bagel, and then we'll go to the zoo.
+    - I felt it!
+    - Guys? There's a somebody I'd like you to meet.
+    - That would be Marcel. You wanna say hi?
+    - Oh, he is precious! Where did you get him?
+    - That's so sweet.
+    - And hey, here's to a lousy Christmas.
+    - And a crappy New Year.
+    - I'd like to propose a toast. Little toast here, ding ding. I know this isn't the kind of Thanksgiving that all of you all planned, but for me, this has been really great, you know, I think because it didn't involve divorce or projectile vomiting. Anyway, I was just thinking, I mean, if you'd gone to Vail, and if you guys'd been with your family, if you didn't have syphilis and stuff, we wouldn't be all together, you know? So I guess what I'm trying to say is that I'm very thankful that all of your Thanksgivings sucked.
+    - I got the tickets! I got the tickets! Five hours from now, shoop, shoop, shoop.
+    - No, I prefer to keep a safe distance from all this merriment.
+    - I'm serious. You're amazing. You know when to spritz, when to lay back.
+    - Not the first two, but the second two- woooo! ...I love you guys. You guys are the greatest. I love my sister (Kisses Monica), I love Pheebs... (Hugs her)
+    - (hugs him) And listen, man, if you wanna be gay, be gay. Doesn't matter to me.
+    - Rachel. Rachel Rachel. (Sits down beside her) I love you the most.
+    - Pheebs, could you maybe hand me a cracker?
+    - No, we were just laughing. You know, how laughter can be infectious.
+    - Good luck, man. I hope you get it.
+    - Ok, right about now the turkey should be crispy on the outside, juicy on the inside. Why are we standing here?
+    - We're waiting for you to open the door. You got the keys.
+
+- intent: goodbye
+  examples: |
+    - Well, thank you for giving it back.
+    - Night.
+    - Okay, see, see, you guys, what if we don't get magic beans? I mean, what if all we've got are.. beans?
+    - Yes, yes I did, but what I didn't say was what I was about to say, what I wanted to say was, uh... would you like to go out with me sometime, thankyou, goodnight. (He walks back to the others but she calls him back.)
+    - Thank you. Thank you so much!
+    - Ok, good-bye you guys. Thanks for everything
